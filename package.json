@@ -1,8 +1,11 @@
 {
+  "homepage": "https://Sayantan699.github.io/GithubProfileMain2",
   "name": "githubprofilemain2",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sayantan Halder",
@@ -12,5 +15,8 @@
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
