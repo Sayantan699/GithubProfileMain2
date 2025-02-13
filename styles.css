@@ -1,0 +1,259 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+#heading {
+  margin: 0px;
+}
+
+.heading-container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 0.1em;
+  margin-top: 20px;
+  font-size: 30px;
+  width: 100%;
+}
+
+/*.header {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 4.5;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZwogIGNsYXNzPSJ3YXZlLXN2ZyIKICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgdmlld0JveD0iMCAwIDE0NDAgMzIwIgo+CiAgPHBhdGgKICAgIGZpbGw9IiMyNzMwMzYiCiAgICBmaWxsLW9wYWNpdHk9IjEiCiAgICBkPSJNMCw5Nkw0OCw5MC43Qzk2LDg1LDE5Miw3NSwyODgsMTEyQzM4NCwxNDksNDgwLDIzNSw1NzYsMjI5LjNDNjcyLDIyNCw3NjgsMTI4LDg2NCwxMjIuN0M5NjAsMTE3LDEwNTYsMjAzLDExNTIsMjEzLjNDMTI0OCwyMjQsMTM0NCwxNjAsMTM5MiwxMjhMMTQ0MCw5NkwxNDQwLDBMMTM5MiwwQzEzNDQsMCwxMjQ4LDAsMTE1MiwwQzEwNTYsMCw5NjAsMCw4NjQsMEM3NjgsMCw2NzIsMCw1NzYsMEM0ODAsMCwzODQsMCwyODgsMEMxOTIsMCw5NiwwLDQ4LDBMMCwwWiIKICA+PC9wYXRoPgo8L3N2Zz4K");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: #273036;
+    height: calc(320px - 20vw);
+    margin-bottom: -0.1em;
+  }
+}*/
+
+.wave-svg {
+  width: 100%;
+  animation: waveAppear 1.5s ease-out forwards;
+  padding-bottom: 5em;
+  filter: drop-shadow(0px -10px 40px #b74b4b);
+  position: relative;
+}
+@keyframes waveAppear {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.Profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 200px;
+  position: relative;
+  bottom: 100px;
+}
+.profilename {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px;
+}
+img {
+  height: 200px;
+  border-radius: 50%;
+}
+.cards {
+  height: 350px;
+  padding: 20px;
+  text-align: center;
+  border: 2px white solid;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-top: 20px;
+  animation: cardsAppear 2.2s ease-in-out;
+}
+.cards:hover {
+  box-shadow: 5px 5px 35px #b74b4b;
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+.input {
+  width: 400px;
+  height: 25px;
+  font-size: 20px;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+button {
+  padding: 1rem;
+  background-color: black;
+  border-radius: 2rem;
+  font-size: 20px;
+  color: #b74b4b;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid #b74b4b;
+  transition: 0.3s ease;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  transform: scale3d(1.03);
+  background-color: #b74b4b;
+  color: black;
+  box-shadow: 0 0 25px #b74b4b;
+}
+.but {
+  padding-top: 100px;
+}
+.input1 {
+  position: relative;
+  bottom: 180px;
+  display: flex;
+  justify-content: center;
+  animation: sideAppear 1.5s ease-out forwards;
+  z-index: 5;
+}
+.input2 {
+  position: relative;
+  bottom: 160px;
+  display: flex;
+  justify-content: center;
+  animation: sideAppear2 1.7s ease-out forwards;
+}
+@keyframes sideAppear {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes sideAppear2 {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes cardsAppear {
+  from {
+    transform: scale(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.profilelink {
+  padding: 1rem;
+  background-color: black;
+  border-radius: 2rem;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b74b4b;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  border: 2px solid #b74b4b;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  bottom: 2px;
+}
+.profilelink:hover {
+  transform: scale3d(1.03);
+  background-color: #b74b4b;
+  color: black;
+  box-shadow: 0 0 25px #b74b4b;
+}
+.apicall {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 650px) {
+  .apicall {
+    font-size: 30px;
+  }
+  .profilename {
+    font-size: 24px;
+  }
+  img {
+    height: 150px;
+  }
+  .cards {
+    position: relative;
+    top: 200px;
+    width: 250px;
+    height: 300px;
+  }
+  button {
+    padding: 0.6rem;
+    font-size: 16px;
+  }
+  .input {
+    height: 15px;
+    font-size: 15px;
+  }
+  .but {
+    padding: 20px;
+  }
+  .input1 {
+    top: 180px;
+  }
+  .input2 {
+    z-index: 50;
+    top: 200px;
+  }
+  .wave-svg {
+    display: none;
+  }
+  .Profiles {
+    bottom: 0px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .input1 {
+    top: 220px;
+  }
+  .input2 {
+    top: 240px;
+  }
+  .Profiles {
+    top: 20px;
+  }
+}
